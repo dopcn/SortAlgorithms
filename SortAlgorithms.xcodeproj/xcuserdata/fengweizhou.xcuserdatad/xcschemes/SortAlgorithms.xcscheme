@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "87F3202D1C3D14B600AAD0A8"
+               BuildableName = "SortAlgorithmsTests.xctest"
+               BlueprintName = "SortAlgorithmsTests"
+               ReferencedContainer = "container:SortAlgorithms.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
