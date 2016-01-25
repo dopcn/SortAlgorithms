@@ -21,6 +21,8 @@
 		874462841C53B759002CEAB9 /* CountSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462831C53B759002CEAB9 /* CountSort.swift */; };
 		874462851C53B759002CEAB9 /* CountSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462831C53B759002CEAB9 /* CountSort.swift */; };
 		877ABC431C3CB6000081BA44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877ABC421C3CB6000081BA44 /* main.swift */; };
+		87D0B2AB1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */; };
+		87D0B2AC1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */; };
 		87F320311C3D14B600AAD0A8 /* SortAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F320301C3D14B600AAD0A8 /* SortAlgorithmsTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,7 @@
 		874462831C53B759002CEAB9 /* CountSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountSort.swift; sourceTree = "<group>"; };
 		877ABC3F1C3CB5FF0081BA44 /* SortAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		877ABC421C3CB6000081BA44 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StdLibFuncWrapper.swift; sourceTree = "<group>"; };
 		87F3202E1C3D14B600AAD0A8 /* SortAlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortAlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F320301C3D14B600AAD0A8 /* SortAlgorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortAlgorithmsTests.swift; sourceTree = "<group>"; };
 		87F320321C3D14B600AAD0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +99,7 @@
 				874462771C535A86002CEAB9 /* QuickSort.swift */,
 				874462801C53AA0A002CEAB9 /* HeapSort.swift */,
 				874462831C53B759002CEAB9 /* CountSort.swift */,
+				87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */,
 			);
 			path = SortAlgorithms;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				874462741C527FA5002CEAB9 /* InsertionSort.swift in Sources */,
+				87D0B2AB1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */,
 				874462811C53AA0A002CEAB9 /* HeapSort.swift in Sources */,
 				874462781C535A86002CEAB9 /* QuickSort.swift in Sources */,
 				874462841C53B759002CEAB9 /* CountSort.swift in Sources */,
@@ -212,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				874462791C5375FB002CEAB9 /* main.swift in Sources */,
+				87D0B2AC1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */,
 				8744627D1C537605002CEAB9 /* QuickSort.swift in Sources */,
 				8744627B1C537600002CEAB9 /* InsertionSort.swift in Sources */,
 				874462851C53B759002CEAB9 /* CountSort.swift in Sources */,

@@ -7,20 +7,15 @@
 //
 
 import XCTest
-//@testable import SortAlgorithms
 
 class SortAlgorithmsTests: XCTestCase {
     
-    let x = Array(count: 5000, repeatedValue: 0).map { (n) -> Int in
-        return n + Int(arc4random_uniform(5000))
-    }
+    let x = Array(count: 5000, repeatedValue: 0).map { $0 + Int(arc4random_uniform(5000)) }
     
-    override func setUp() {
-        super.setUp()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
+    func testMethodPerformance() {
+        self.measureBlock { [unowned self] () -> Void in
+            self.x.sort(<)
+        }
     }
     
     func testBubbleSortPerformance() {
@@ -58,10 +53,32 @@ class SortAlgorithmsTests: XCTestCase {
             countSort(self.x, maxValue: 5000, by: <)
         }
     }
-    func testMethodPerformance() {
+   
+    func testQsortWrapperPerformance() {
         self.measureBlock { [unowned self] () -> Void in
-            _ = self.x.sort(<)
+            var tmp = self.x
+            qsortWrapper(&tmp)
         }
     }
     
+    func testMergesortWrapperPerformance() {
+        self.measureBlock { [unowned self] () -> Void in
+            var tmp = self.x
+            mergesortWrapper(&tmp)
+        }
+    }
+    
+    func testHeapsortWrapperPerformance() {
+        self.measureBlock { [unowned self] () -> Void in
+            var tmp = self.x
+            heapsortWrapper(&tmp)
+        }
+    }
+    
+    func testPsortWrapperPerformance() {
+        self.measureBlock { [unowned self] () -> Void in
+            var tmp = self.x
+            psortWrapper(&tmp)
+        }
+    }
 }
