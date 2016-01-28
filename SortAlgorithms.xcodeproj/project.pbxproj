@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		873DAE421C59EEFE008CA711 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873DAE411C59EEFE008CA711 /* Heap.swift */; };
 		874462721C527716002CEAB9 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462711C527716002CEAB9 /* BubbleSort.swift */; };
 		874462741C527FA5002CEAB9 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462731C527FA5002CEAB9 /* InsertionSort.swift */; };
 		874462761C528CB6002CEAB9 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462751C528CB6002CEAB9 /* MergeSort.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		873DAE411C59EEFE008CA711 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		874462711C527716002CEAB9 /* BubbleSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		874462731C527FA5002CEAB9 /* InsertionSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		874462751C528CB6002CEAB9 /* MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				874462751C528CB6002CEAB9 /* MergeSort.swift */,
 				874462771C535A86002CEAB9 /* QuickSort.swift */,
 				874462801C53AA0A002CEAB9 /* HeapSort.swift */,
+				873DAE411C59EEFE008CA711 /* Heap.swift */,
 				874462831C53B759002CEAB9 /* CountSort.swift */,
 				87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */,
 			);
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873DAE421C59EEFE008CA711 /* Heap.swift in Sources */,
 				874462741C527FA5002CEAB9 /* InsertionSort.swift in Sources */,
 				87D0B2AB1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */,
 				874462811C53AA0A002CEAB9 /* HeapSort.swift in Sources */,
