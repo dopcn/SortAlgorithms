@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func countSort(items: [Int], maxValue: Int, @noescape by compare: (Int, Int) -> Bool) -> [Int] {
+public func countSort(items: [Int], maxValue: Int) -> [Int] {
     guard items.count > 1 else {
         return items
     }
