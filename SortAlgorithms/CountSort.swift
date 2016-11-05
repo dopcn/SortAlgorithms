@@ -8,18 +8,18 @@
 
 import Foundation
 
-public func countSort(items: [Int], maxValue: Int) -> [Int] {
+public func countSort(_ items: [Int], maxValue: Int) -> [Int] {
     guard items.count > 1 else {
         return items
     }
-    var bridge = Array(count: maxValue+1, repeatedValue: 0)
+    var bridge = Array(repeating: 0, count: maxValue+1)
     for item in items {
         bridge[item] += 1
     }
     for i in 1..<bridge.count {
         bridge[i] += bridge[i-1]
     }
-    var result = Array(count: items.count, repeatedValue: 0)
+    var result = Array(repeating: 0, count: items.count)
     for item in items {
         bridge[item] -= 1
         result[bridge[item]] = item

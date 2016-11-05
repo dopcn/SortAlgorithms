@@ -8,13 +8,13 @@
 
 import Foundation
 
-public func quickSort<T: Comparable>(items: [T], @noescape by compare: (T, T) -> Bool) -> [T] {
+public func quickSort<T: Comparable>(_ items: [T], by compare: (T, T) -> Bool) -> [T] {
     guard items.count > 1 else {
         return items
     }
     var items = items
     
-    func partition(inout items: [T], left: Int, right: Int, @noescape by compare: (T, T) -> Bool) -> Int {
+    func partition(_ items: inout [T], left: Int, right: Int, by compare: (T, T) -> Bool) -> Int {
         let random = left + Int(arc4random_uniform(UInt32(right-left)))
         let key = items[random]
         (items[left], items[random]) = (items[random], items[left])
@@ -30,7 +30,7 @@ public func quickSort<T: Comparable>(items: [T], @noescape by compare: (T, T) ->
         (items[left], items[j]) = (items[j], items[left])
         return j
     }
-    func quickSortIter(inout items: [T], left: Int, right: Int, @noescape by compare: (T, T) -> Bool) {
+    func quickSortIter(_ items: inout [T], left: Int, right: Int, by compare: (T, T) -> Bool) {
         if left < right {
             let middle = partition(&items, left: left, right: right, by: compare)
             quickSortIter(&items, left: left, right: middle-1, by: compare)

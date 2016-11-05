@@ -9,24 +9,24 @@
 import Foundation
 
 protocol HeapType {
-    typealias T
+    associatedtype T
     var items: [T] { get set }
     var heapSize: Int { get set }
-    func parent(i: Int) -> Int
-    func left(i: Int) -> Int
-    func right(i: Int) -> Int
+    func parent(_ i: Int) -> Int
+    func left(_ i: Int) -> Int
+    func right(_ i: Int) -> Int
 }
 
 extension HeapType {
-    func parent(i: Int) -> Int {
+    func parent(_ i: Int) -> Int {
         return i/2
     }
     
-    func left(i: Int) -> Int {
+    func left(_ i: Int) -> Int {
         return i*2
     }
     
-    func right(i: Int) -> Int {
+    func right(_ i: Int) -> Int {
         return i*2 + 1
     }
 }
@@ -35,7 +35,7 @@ struct MaxHeap<T: Comparable>: HeapType {
     var items: [T]
     var heapSize: Int
     
-    mutating func maxHeapify(i: Int) {
+    mutating func maxHeapify(_ i: Int) {
         let l = left(i), r = right(i)
         var largest = -1
         if l < heapSize && items[l] > items[i] {
@@ -67,7 +67,7 @@ struct MinHeap<T: Comparable>: HeapType {
     var items: [T]
     var heapSize: Int
     
-    mutating func minHeapify(i: Int) {
+    mutating func minHeapify(_ i: Int) {
         let l = left(i), r = right(i)
         var smallest = -1
         if l < heapSize && items[l] < items[i] {

@@ -8,11 +8,11 @@
 
 import Foundation
 
-let x = Array(count: 101, repeatedValue: 0).map { $0 + Int(arc4random_uniform(100)) }
+let x = Array(repeating: 0, count: 101).map { $0 + Int(arc4random_uniform(100)) }
 
 print("x is \n \(x)")
 
-let y = x.sort(<)
+let y = x.sorted(by: <)
 
 print("y is \n \(y)")
 
@@ -32,11 +32,11 @@ print("y is \n \(y)")
 //print("x3 equals y is \(x3==y)")
 
 //let x4 = quickSort(x, by: <)
-var x4 = x
+//var x4 = x
 
-qsortWrapper(&x4)
-print("x4 is \n \(x4)")
-print("x4 equals y is \(x4==y)")
+//qsortWrapper(&x4)
+//print("x4 is \n \(x4)")
+//print("x4 equals y is \(x4==y)")
 
 //let x5 = heapSort(x, by: <)
 //

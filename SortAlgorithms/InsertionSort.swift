@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func insertionSort<T: Comparable>(items: [T], @noescape by compare: (T, T) -> Bool) -> [T] {
+public func insertionSort<T: Comparable>(_ items: [T], by compare: (T, T) -> Bool) -> [T] {
     guard items.count > 1 else {
         return items
     }

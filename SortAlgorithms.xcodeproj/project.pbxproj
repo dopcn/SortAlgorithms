@@ -21,6 +21,7 @@
 		874462821C53AA0A002CEAB9 /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462801C53AA0A002CEAB9 /* HeapSort.swift */; };
 		874462841C53B759002CEAB9 /* CountSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462831C53B759002CEAB9 /* CountSort.swift */; };
 		874462851C53B759002CEAB9 /* CountSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874462831C53B759002CEAB9 /* CountSort.swift */; };
+		877881271DCE3A8400187156 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873DAE411C59EEFE008CA711 /* Heap.swift */; };
 		877ABC431C3CB6000081BA44 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877ABC421C3CB6000081BA44 /* main.swift */; };
 		87D0B2AB1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */; };
 		87D0B2AC1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B2AA1C5610AE00A6E0BF /* StdLibFuncWrapper.swift */; };
@@ -165,9 +166,11 @@
 				TargetAttributes = {
 					877ABC3E1C3CB5FF0081BA44 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 					87F3202D1C3D14B600AAD0A8 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				874462791C5375FB002CEAB9 /* main.swift in Sources */,
+				877881271DCE3A8400187156 /* Heap.swift in Sources */,
 				87D0B2AC1C5610AE00A6E0BF /* StdLibFuncWrapper.swift in Sources */,
 				8744627D1C537605002CEAB9 /* QuickSort.swift in Sources */,
 				8744627B1C537600002CEAB9 /* InsertionSort.swift in Sources */,
@@ -319,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -326,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -337,6 +343,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dopcn.SortAlgorithmsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -348,6 +355,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dopcn.SortAlgorithmsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

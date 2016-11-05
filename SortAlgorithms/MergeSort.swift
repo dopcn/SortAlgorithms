@@ -8,8 +8,8 @@
 
 import Foundation
 
-public func mergeSort<T: Comparable>(items: [T], @noescape by compare: (T, T) -> Bool) -> [T] {
-    func merge(left left: [T], right: [T], @noescape by compare: (T, T) -> Bool) -> [T] {
+public func mergeSort<T: Comparable>(_ items: [T], by compare: (T, T) -> Bool) -> [T] {
+    func merge(left: [T], right: [T], by compare: (T, T) -> Bool) -> [T] {
         var result = [T]()
         var l = 0, r = 0
         while l < left.count || r < right.count {
